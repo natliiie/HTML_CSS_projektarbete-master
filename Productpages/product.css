@@ -22,6 +22,14 @@ main {
   min-height: 100vh;
 }
 
+.well {
+  margin-bottom: 10px;
+  border: 1px solid rgb(184, 184, 184);
+  border-bottom: thick double black;
+  border-right: thick double black;
+}
+
+
 .produkt-rubrik {
   background-color: rgb(83, 157, 218);
   height: max-content;
@@ -50,9 +58,7 @@ main {
   max-width: 200px;
   display: flex;
   flex-direction: column;
-  border: double;
-  border-bottom: thick double black;
-  border-right: thick double black;
+  padding: 0;
 }
 
 .dubble-border {
@@ -104,18 +110,13 @@ main {
 
 .link-page:hover {
   color: rgb(158, 158, 158);
+  text-decoration: none;
 }
 
 .price-container p {
   font-size: 20px;
   padding: 10px;
 }
-
-#price {
-  font-size: 20px;
-  padding: 10px;
-}
-
 /*Enskilda produkter*/
 .col-sm-6 {
   float: left;
@@ -137,7 +138,6 @@ main {
 }
 
 .price {
-  font-weight: 900;
   font-size: 30px;
   color: rgb(250, 18, 18);
   vertical-align: middle;
@@ -149,9 +149,6 @@ main {
   padding-top: 0;
 }
 
-.well {
-  margin-bottom: 10px;
-}
 
 .textrubrik {
   margin-top: 0;
