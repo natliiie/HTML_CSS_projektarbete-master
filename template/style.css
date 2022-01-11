@@ -19,7 +19,7 @@ body, html{
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    background-image: url("https://github.com/natliiie/HTML_CSS_projektarbete/blob/master/template/images/marbles.jpg"); /*https://pixabay.com/sv/photos/kulor-glas-kulor-bollar-runda-1659398/*/
+    background-image: url("../template/images/marbles.jpg"); /*https://pixabay.com/sv/photos/kulor-glas-kulor-bollar-runda-1659398/*/
     
     background-size: cover;
     margin: 0;
