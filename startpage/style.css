@@ -1,0 +1,136 @@
+
+
+
+.carousel{
+   max-width: 100%;
+    margin: auto;
+}
+
+.carousel img{
+    size: 1000px;
+}
+
+.carousel button{
+    background-color: rgb(117, 165, 177);
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    margin: auto 10px;
+}
+
+.shadowTextBox{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(117, 165, 177);
+    opacity: 0.7;
+    bottom: 0;
+}
+
+.shadowTextBox p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 10vh;
+    font-size: 1.45em;
+}
+
+.cardField{
+
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;/*se hur brad gjorde*/
+    max-width: 600px;
+    justify-content: center;
+}
+
+.card{
+    position: relative;
+    margin-top: 10px;
+    transition: all 0.2s ease-out;
+}
+
+.card:hover{
+    background-color: rgb(104, 104, 104);
+    opacity: 90%;
+    transform: scale(1.01);
+}
+
+.filledConLink{
+    margin: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#campaignCard, #shippingCard{
+    background:rgb(255, 106, 69);
+}
+
+#chattCard, #weCard{
+    background: rgb(255, 227, 69);
+}
+
+#contactCard, #carrierCard{
+    background: rgb(69, 103, 255);
+}
+
+/*For monitors bigger than phone*/
+@media (min-width: 600px){
+
+    .cardField{
+        max-width: 1500px;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        margin: 20px;
+    }
+
+    .card{
+        border-radius: 25px;
+        text-align: center;
+    }
+
+    .card a{
+        border-radius: 25px;
+    }
+}
+
+/*For desktop and above*/
+@media(min-width:1200px){
+
+    .cardField{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card{
+        height: 25vh;
+        font-size: 1.1em;
+    }
+
+    #campaignCard{
+        order: 1;
+    }
+
+    #shippingCard{
+        order: 4;
+    }
+
+    #chattCard{
+        order: 0;
+    }
+
+    #weCard{
+        order: 3;
+    }
+
+    #carrierCard{
+        order: 5;
+    }
+
+    #contactCard{
+        order: 2;
+    }
+}
+/*Använd media queries och fasta punkter för hur griden ska se ut istället för auto-fit och repeat. (kanske kan använda repeat, men hårdkoda lösningen för små skärmar.*/

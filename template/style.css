@@ -1,0 +1,117 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: /*rgb(190, 190, 190)*/#ade4ff;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.isSticky {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("/template/images/marbles.jpg");/*https://pixabay.com/sv/photos/kulor-glas-kulor-bollar-runda-1659398/*/
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#logoLink{
+    text-decoration: none;
+    margin-bottom: 0.5%;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 200px));
+    justify-content: center;
+    width: 100%;
+}
+
+.container-fluid li{
+    background-color: #00aaff;
+    border-radius: 360px;
+    margin: 0 10px 10px 10px;
+}
+
+.nav a{
+    font-size: 1.4rem;
+    color: #0f0f0f;
+    -webkit-transition: ease-in-out 0.1s;
+    font-size: 4vw;
+    font-size: max(1.1rem);
+    text-align: center;
+    transition: all 0.2s ease-out;
+    font-weight: bold;
+}
+
+.nav a:hover{
+    background-color: #a1e0ff;
+    color: #0f0f0f;
+    border-radius: 360px;
+    transform: scale(1.01);
+}
+
+.container-fluid a:visited{
+    color:#0f0f0f;
+}
+
+#productLink::before{
+    content: "Våra produkter";
+}
+
+#contactLink::before{
+    content: "Kontakta oss";
+}
+
+#aboutLink::before{
+    content: "Om oss";
+}
+
+#blogLink::before{
+    content: "Blogg";
+}
+
+.container-fluid h1::before{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.7em;
+    content: "Vårt företag";
+    font-weight: bold;
+    text-shadow:     
+    -1px -1px 0 rgb(255, 51, 51), 
+    1px 1px 0 rgb(255, 174, 0), 
+    1px 0px 0 rgb(0, 238, 255), 
+    -1px 0px 0 rgb(255, 51, 51), 
+    0px 1px 0 rgb(255, 51, 51), 
+    0px -1px 0 rgb(255, 51, 51);  
+}
+
+.sidesAndMain{
+    display: flex;
+    justify-content:space-between;
+}
+
+.mainContent{
+    margin: auto;
+    padding: 0;
+    max-width: 1500px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.sides{
+    overflow: hidden;
+    height: 90vh;
+    position: sticky; 
+    top: 108px;
+    max-width: 20vw;
+}
