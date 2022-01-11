@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.mainContent {
+  background-color: rgb(169, 238, 247);
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.produkt-rubrik {
+  background-color: rgb(83, 157, 218);
+  height: max-content;
+  padding: 5px;
+  border-bottom: 2px solid black;
+}
+.produkt-rubrik h1 {
+  margin-bottom: 0;
+}
+
+.page-container {
+  background-color: rgb(169, 238, 247);
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.product-container {
+  background-color: white;
+  width: 200px;
+  height: fit-content;
+  margin: 10px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  border: double;
+  border-bottom: thick double black;
+  border-right: thick double black;
+}
+
+.dubble-border {
+  border-bottom: thick double black;
+  border-right: thick double black;
+}
+
+.image-container {
+  max-width: 200px;
+  max-height: 200px;
+  border-bottom: double black;
+}
+.image-container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.upcomming {
+  margin: 3%;
+  position: relative;
+}
+
+.upcomming img {
+  filter: blur(2px);
+}
+
+.upcoming-text {
+  position: absolute;
+  top: 50%;
+  background-color: white;
+}
+
+.description-container {
+  background-color: rgba(255, 255, 255, 0.74);
+  height: 60px;
+  padding: 10px;
+  word-wrap: break-word;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.link-page,
+:link,
+:visited,
+:active {
+  color: black;
+  text-decoration: none;
+}
+
+.link-page:hover {
+  color: rgb(158, 158, 158);
+}
+
+.price-container p {
+  font-size: 20px;
+  padding: 10px;
+}
+
+#price {
+  font-size: 20px;
+  padding: 10px;
+}
+
+/*Enskilda produkter*/
+.col-sm-6 {
+  float: left;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#headingOne {
+  margin-top: 0;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 30px;
+  color: rgb(250, 18, 18);
+  vertical-align: middle;
+  margin: 0;
+}
+
+.row {
+  padding: inherit;
+  padding-top: 0;
+}
+
+.well {
+  margin-bottom: 10px;
+}
+
+.textrubrik {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.accordion-body li {
+  list-style-type: circle;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.center-block {
+  float: none;
+}
+.carousel img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+}

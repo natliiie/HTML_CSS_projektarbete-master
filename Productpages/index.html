@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link href="/template/style.css" rel="stylesheet" />
+    <!--CSS för övergripande designen-->
+    <link href="/Productpages/product.css" rel="stylesheet" />
+    <!--Startsidans CSS-->
+    <title>Vårt företag - Produkter</title>
+  </head>
+
+  <body>
+    <div class="isSticky">
+      <header>
+        <!--Använder: https://getbootstrap.com/docs/5.1/layout/containers/-->
+        <div class="container-fluid">
+          <h1></h1>
+
+          <!--Använder: https://getbootstrap.com/docs/5.1/components/navs-tabs/-->
+          <ul class="nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="productLink"
+                href="/Productpages/index.html"
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contactLink" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="aboutLink" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="blogLink" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+
+    <div class="sidesAndMain">
+      <img
+        class="sides d-none d-md-block d-sm-none"
+        src="/template/images/lego.jpg"
+        alt=""
+      /><!--https://getbootstrap.com/docs/4.0/utilities/display/-->
+
+      <main>
+        <div class="mainContent container">
+          <!-- Hela sidan -->
+          <div class="produkt-rubrik">
+            <!-- Rubrik -->
+            <h1>Leksaker</h1>
+          </div>
+          <div class="page-container">
+            <!-- Huvudsida -->
+            <!-- Produkt 1 -->
+            <div class="product-container">
+              <a class="link-page" href="/Productpages/product-one.html">
+              <div class ="image-container">
+                  <img src="/Productpages/images/teddy.jpg" alt="Teddy">
+              </div>
+              <div class="description-container">
+                <p>beskrivning som är en länk</p>
+              </div>
+              <div class = "price-container">
+                <p class = "price">199 kr</p>
+              </div>
+            </a>
+            </div>
+            <!-- Produkt 2 -->
+            <div class="product-container">
+              <a class="link-page" href="/Productpages/product-two.html">
+              <div class ="image-container">
+                <img src="/Productpages/images/spiderman.jpg" alt="Spiderman">
+              </div>
+              <div class="description-container">
+                <p>beskrivning som är en länk</p>
+              </div>
+              <div class = "price-container">
+                <p class = "price">199 kr</p>
+              </div>
+            </a>
+            </div>
+<!-- Produkt 3 -->
+            <div class="product-container">
+              <a class="link-page" href="/Productpages/product-three.html">
+              <div class ="image-container">
+                <img src="/Productpages/images/elsa.jpg" alt="Elsa">
+              </div>
+              <div class="description-container">
+                <p>beskrivning som är en länk</p>
+              </div>
+              <div class = "price-container">
+                <p class = "price">199 kr</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </main>
+      <img
+        class="sides d-none d-md-block d-sm-none"
+        src="/template/images/lego.jpg"
+        alt=""
+      /><!--https://getbootstrap.com/docs/4.0/utilities/display/-->
+    </div>
+
+    <!--Javascript för att få bland annat carousel att fungera-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
